@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <h1>div y span</h1>
+    <div>
+      <p>Hola mundo</p>
+      <p>Hola mundo</p>
+      <p>Hola mundo</p>
+      <p>Hola mundo</p>
+      <p>Hola mundo</p>
+    </div>
+
+    <div>
+      <a href="...">Click aquí</a>
+      <a href="...">Click aquí</a>
+      <a href="...">Click aquí</a>
+      <p><span>💘</span>5<span>Vidas</span></p>
+
+      <span>Texto Orange</span>
+      <span>Texto Blue</span>
+    </div>
+
+    <br />
+    <hr />
+    <!-- Horizontal rule -->
+    <br />
+
+    <h1>Formularios</h1>
+
+    <div id="contact-form" class="form-container">
+      <h2>Contact Form</h2>
+      <form action="">
+        <div>
+          <div>
+            <label for="name"> First Name:</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div>
+            <label for="name"> Last Name:</label>
+            <input type="text" id="lname" name="name" />
+          </div>
+        </div>
+        <div>
+          <label for="email"> Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div>
+          <p>Query Type *</p>
+          <div>
+            <div>
+              <input
+                type="radio"
+                id="general"
+                name="query_type"
+                value="General Enquiry"
+              />
+              <label for="general">General Enquiry</label> <br />
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="support"
+                name="query_type"
+                value="Support Request"
+              />
+              <label for="support"> Support Request</label> <br />
+            </div>
+          </div>
+        </div>
+        <div>
+          <label for="message">Message *</label> <br />
+          <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+          <input type="checkbox" id="consent" name="consent" value="true" />
+          <label for="consent">
+            I consent to being contacted by the team *</label
+          >
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+      <!-- consent: true -->
+      <!-- query type: General Enquiry, Support Request -->
+    </div>
+  </body>
+</html>
