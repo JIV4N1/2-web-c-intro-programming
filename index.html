@@ -1,18 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página informativa sobre la banda mexicana Enjambre"
+    />
     <title>Proyecto Final</title>
   </head>
   <body>
     <header>
-      <h1>Trayectoria de Enjambre</h1>
+      <h1>Enjambre</h1>
+      <p>Banda mexicana de rock psicodélico</p>
     </header>
     <main>
-      <p>
-        En ésta página se mostrará la trayectoria de la banda llamada Enjambre
-      </p>
+      <section id="inicio">
+        <h2>Bienvenidos a la página de Enjambre</h2>
+        <p>
+          Enjambre es una banda mexicana de rock originaria de Fresnillo,
+          Zacatecas, conocida por su sonido único que fusiona el rock
+          psicodélico y new wave de los 80's con toques de post-punk y un estilo
+          muy melódico.
+        </p>
+
+        <div class="image-container">
+          <img
+            src="images/Enjambre-1024x1024.jpg"
+            alt="Banda de rock en concierto"
+            width="400"
+          />
+          <p class="image-caption">
+            Enjambre en vivo, mostrando su energía característica en el
+            escenario
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Historia de la Banda</h2>
+        <p>
+          Enjambre se formó en Fresnillo, Zacatecas, aunque posteriormente se
+          trasladaron a la Ciudad de México para consolidar su carrera musical.
+          La banda está compuesta por los hermanos Luis Humberto Navejas (voz,
+          bajo y teclados) y Rafael Navejas (guitarra y coros), junto con Javier
+          Mejía (batería).
+        </p>
+
+        <p>
+          Su estilo se caracteriza por letras poéticas y crípticas, una estética
+          retro melancólica y un sonido inconfundible que los ha convertido en
+          una de las bandas más influyentes del rock mexicano contemporáneo.
+        </p>
+
+        <h3>Integrantes</h3>
+        <ul>
+          <li>
+            <strong>Luis Humberto Navejas:</strong> Voz principal, bajo y
+            teclados. Compositor principal de las letras.
+          </li>
+          <li><strong>Rafael Navejas:</strong> Guitarra y coros.</li>
+          <li><strong>Javier Mejía:</strong> Batería.</li>
+        </ul>
+      </section>
+
+      <section id="discografia">
+        <h2>Discografía</h2>
+        <p>
+          A lo largo de su carrera, Enjambre ha publicado varios álbumes que han
+          sido aclamados por la crítica y adorados por sus seguidores:
+        </p>
+
+        <div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1571330735066-03aaa9429d89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt="Portada de álbum Consuelo En Domingo"
+            />
+            <h4>Consuelo En Domingo (2023)</h4>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1571330735066-03aaa9429d89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt="Portada de álbum Imperfecto Extraño"
+            />
+            <h4>Imperfecto Extraño (2020)</h4>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1571330735066-03aaa9429d89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt="Portada de álbum Daltónico"
+            />
+            <h4>Daltónico (2013)</h4>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1571330735066-03aaa9429d89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt="Portada de álbum Huésped Del Orbe"
+            />
+            <h4>Huésped Del Orbe (2010)</h4>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Contacto y Suscripción</h2>
+        <p>
+          Si deseas recibir información sobre próximos conciertos, lanzamientos
+          y noticias de Enjambre, completa el siguiente formulario:
+        </p>
+
+        <form>
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+              <option value="mx">México</option>
+              <option value="us">Estados Unidos</option>
+              <option value="es">España</option>
+              <option value="ar">Argentina</option>
+              <option value="co">Colombia</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje (opcional):</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>
+              <input type="checkbox" name="newsletter" checked />
+              Deseo recibir el boletín mensual de noticias
+            </label>
+          </div>
+
+          <button type="submit">Suscribirse</button>
+        </form>
+      </section>
     </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Página de Fans de Enjambre. Sitio no oficial creado con
+        fines educativos.
+      </p>
+      <div class="social-links">
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">YouTube</a>
+      </div>
+    </footer>
   </body>
 </html>
